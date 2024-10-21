@@ -1,0 +1,14 @@
+.services-list {
+
+   &__item {
+      grid-column: span 3;
+
+      @include tablet {
+         grid-column: span 6;
+      }
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+}

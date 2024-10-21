@@ -1,0 +1,62 @@
+.quote {
+   margin: 0;
+
+   &__content {
+      position: relative;
+      margin: 0 0 51px;
+      padding: 80px 102px 0 135px;
+
+      @include mobile {
+         padding: 15px 0 0;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 80px;
+         left: 77px;
+         width: 28px;
+         height: 20px;
+         background: url('../img/braces.svg') no-repeat;
+
+         @include mobile {
+            display: none;
+         }
+      }
+   }
+
+   &__content p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+
+      &:not(:last-child) {
+         margin: 0 0 30px;
+      }
+   }
+
+   &__footer {
+      padding: 9px 102px 80px 135px;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--color-storm);
+      background: url('../img/signature.svg') no-repeat top right 105px;
+
+      @include mobile {
+         padding: 9px 0 135px;
+         text-align: center;
+         background: url('../img/signature.svg') no-repeat bottom 50px center;
+      }
+   }
+
+   &__author {
+      margin: 0 0 4px;
+      display: block;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-ebony);
+   }
+}

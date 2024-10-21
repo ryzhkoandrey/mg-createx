@@ -1,0 +1,49 @@
+.partners {
+   padding: 80px 0;
+   background: var(--color-athens);
+
+   &--big-offset {
+      padding: 160px 0 120px;
+   }
+
+   &--transparent-bg {
+      background: transparent;
+   }
+
+   &--about-page {
+      padding: 121px 0 172px;
+   }
+
+   &__title {
+      margin: 0 0 60px;
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 40px 102px;
+
+      @include minidesk {
+         gap: 40px 30px;
+      }
+   }
+
+   &__item {
+
+      @include minidesk {
+         grid-column: span 3;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   &__link {
+      transition: outline .3s;
+
+      &:focus {
+         outline: 1px solid var(--color-primary);
+         outline-offset: 2px;
+      }
+   }
+}

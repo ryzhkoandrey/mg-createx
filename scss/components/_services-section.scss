@@ -1,0 +1,16 @@
+.services-section {
+   padding: 214px 0 80px;
+   background: var(--color-athens) url('../img/services_bg.jpg') top center repeat;
+
+   @include mobile {
+      padding: 40px 0;
+   }
+
+   &__list {
+      margin: 0 0 81px;
+
+      @include mobile {
+         grid-template-columns: repeat(4, 1fr);
+      }
+   }
+}

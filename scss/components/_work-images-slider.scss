@@ -1,0 +1,41 @@
+.work-images-slider {
+   position: relative;
+   overflow: hidden;
+   margin: 0 0 20px;
+
+   &__slider-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 32px;
+      justify-content: space-between;
+      width: 100%;
+
+      // slider-btn
+      
+      .slider-btn {
+         background: rgba(#fff, .5);
+
+         &:hover {
+            background: #fff;
+   
+            path {
+               fill: var(--color-gray);
+            }
+         }
+      }
+   }
+
+   // swiper
+
+   .swiper-slide {
+
+      img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         border-radius: 4px;
+         object-fit: cover;
+      }
+   }
+}

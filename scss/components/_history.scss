@@ -1,0 +1,44 @@
+.history {
+   padding: 100px 0;
+   background: #F4F5F7;
+
+   &__top {
+      margin: 0 0 47px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+   }
+
+   &__title {
+      margin: 0;
+      padding: 0 0 12px;
+      max-width: 710px;
+   }
+
+   &__slider-nav {
+      transform: translateX(12px);
+   }
+
+   &__content {
+
+      @include minitablet {
+         display: block;
+      }
+   }
+
+   &__item {
+      grid-column: span 8;
+   }
+
+   &__image {
+      margin: 0 0 33px;
+      border-radius: 4px;
+   }
+
+   &__descr {
+      margin: 0;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-gray);
+   }
+}

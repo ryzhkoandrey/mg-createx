@@ -1,0 +1,48 @@
+.project-goal {
+   padding: 13px 0 122px;
+   
+   @include mobile {
+      padding: 13px 0 40px;
+   }
+
+   &__left {
+      padding: 40px 0 0;
+      grid-column: span 6;
+
+      @include mobile {
+         margin: 0 0 20px;
+      }
+   }
+
+   &__title {
+      margin: 0 0 40px;
+   }
+
+   &__descr {
+      margin: 0;
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--color-gray);
+      
+      &:not(:last-child) {
+         margin: 0 0 26px;
+      }
+   }
+
+   &__right {
+      grid-column: 8 / span 5;
+
+      @include tablet {
+         grid-column: span 6;
+      }
+   }
+
+   // grid
+
+   .grid {
+
+      @include minitablet {
+         display: block;
+      }
+   }
+}

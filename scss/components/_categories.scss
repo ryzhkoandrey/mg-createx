@@ -1,0 +1,11 @@
+.categories {
+   padding: 120px 0 180px;
+   
+   @include mobile {
+      padding: 40px 0;
+   }
+
+   &__title {
+      margin: 0 0 40px;
+   }
+}

@@ -1,0 +1,36 @@
+.footer-address {
+   padding: 7px 0 0;
+   font-style: normal;
+
+   &__item {
+      display: block;
+      font-size: 16px;
+      line-height: 160%;
+
+      &:not(:last-child) {
+         margin: 0 0 4px;
+      }
+
+      a {
+         color: inherit;
+         transition: color .3s;
+
+         &:focus {
+            outline: 1px solid var(--color-primary);
+            outline-offset: 2px;
+         }
+
+         &:hover {
+            color: var(--color-primary);
+         }
+
+         &:active {
+            color: var(--color-active);
+         }
+      }
+   }
+
+   &__name {
+      color: #FFF;
+   }
+}

@@ -1,0 +1,87 @@
+.portfolio-item {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: #FFF;
+   box-shadow: var(--main-shadow);
+   border-radius: 4px;
+   transition: .3s;
+
+   &:focus {
+      outline: 1px solid var(--color-primary);
+      outline-offset: 2px;
+   }
+
+   &:hover {
+
+      .portfolio-item__btn {
+         margin: 24px 0 0;
+      }
+   }
+
+   &__image {
+      object-fit: cover;
+   }
+
+   &__content {
+      padding: 16px 20px 23px;
+      @include flex-column-center;
+   }
+
+   &__title {
+      margin: 0 0 5px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      color: var(--color-ebony);
+
+      @include minidesk {
+         font-size: 18px;
+      }
+   }
+
+   &__descr {
+      margin: 0;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--color-storm);
+   }
+
+   &__btn {
+      margin: 24px 0 -68px;
+      transition: 0.3s ease-in-out;
+
+      @include minitablet {
+         margin: 24px 0 0;
+      }
+
+      &:focus {
+         outline: none;
+      }
+   
+      &:hover,
+      &:active {
+         color: var(--color-primary);
+         background: transparent;
+      }
+   }
+}
+
+// SWIPER-SLIDE
+// add shadow only to visible slides
+
+.swiper-slide {
+
+   .portfolio-item {
+      box-shadow: none;
+   }
+}
+
+.swiper-slide-visible {
+
+   .portfolio-item {
+      box-shadow: var(--main-shadow);
+   }
+}

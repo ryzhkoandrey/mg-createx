@@ -1,0 +1,31 @@
+.portfolio-more {
+   margin: 60px 0 0;
+   display: inline-flex;
+   align-items: center;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 160%;
+   color: var(--color-gray);
+   transition: color .3s;
+
+      &:focus {
+         outline: 1px solid var(--color-primary);
+         outline-offset: 2px;
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+
+      &:active {
+         color: var(--color-active);
+      }
+
+   svg {
+      margin: 0 16px 0 0;
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      object-fit: cover;
+   }
+}

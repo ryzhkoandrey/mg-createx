@@ -1,0 +1,62 @@
+.testimonials {
+   padding: 97px 0 0;
+   background: var(--color-athens);
+
+   @include minitablet {
+      padding: 40px 0;
+   }
+   
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      position: relative;
+      max-width: 612px;
+
+      @include tablet {
+         max-width: 450px;
+      }
+
+      @include mobile {
+         width: 100%;
+         max-width: none;
+      }
+   }
+   
+   &__title {
+      margin: 0 0 59px;
+   }
+   
+   &__items {
+      position: relative;
+      padding: 0 0 11px;
+   }
+
+   &__slider-nav {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+   }
+
+   &__image {
+      margin: 0 0 -60px;
+      width: 495px;
+      height: 550px;
+      object-fit: cover;
+      border-radius: 4px;
+
+      @include minidesk {
+         width: 380px;
+      }
+
+      @include tablet {
+         width: 300px;
+      }
+
+      @include minitablet {
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,9 @@
+.contacts-section {
+   padding: 80px 0;
+   background: var(--color-ebony) url('../img/contacts-bg.jpg') no-repeat center top / cover;
+
+   &__container {
+      display: flex;
+      justify-content: flex-end;
+   }
+}

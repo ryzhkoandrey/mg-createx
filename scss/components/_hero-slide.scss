@@ -1,0 +1,12 @@
+.hero-slide {
+   padding: 221px 0 353px;
+   background: var(--color-gray) url('../img/hero-bg.jpg') no-repeat top center / cover;
+
+   @include minitablet {
+      padding: 200px 0;
+   }
+
+   @include mobile {
+      padding: 100px 0;
+   }
+}

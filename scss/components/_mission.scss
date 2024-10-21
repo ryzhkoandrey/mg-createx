@@ -1,0 +1,106 @@
+.mission {
+   padding-bottom: 27px;
+
+   &--gray-bg {
+      background: #F4F5F7;
+   }
+
+   &--about-page {
+      padding: 80px 0 82px;
+   }
+
+   &--positions-page {
+      padding: 0 0 180px;
+
+      @include mobile {
+         padding: 0 0 40px;
+      }
+   }
+
+   &__list {
+      --mission-gap: 94px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc( var(--mission-gap) * 2 );
+
+      @include tablet {
+         --mission-gap: 30px;
+      }
+
+      @include minitablet {
+         --mission-gap: 10px;
+      }
+
+      @include mobile {
+         display: block;
+      }
+   }
+
+   &__item {
+      position: relative;
+      padding: 72px 0 0;
+      text-align: center;
+      background: top center no-repeat;
+
+      &:not(:last-child) {
+
+         @include mobile {
+            margin: 0 0 30px;
+         }
+         
+         &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: calc( -1 * var(--mission-gap) );
+            transform: translateX(2px);
+            width: 1px;
+            height: 100%;
+            background: url('../img/divider.svg') center / cover no-repeat;
+
+            @include mobile {
+               display: none;
+            }
+         }
+      }
+
+      &--quality {
+         background-image: url('../img/quality.svg');
+      }
+
+      &--safety {
+         background-image: url('../img/safety.svg');
+      }
+
+      &--comfort {
+         background-image: url('../img/comfort.svg');
+      }
+
+      &--training {
+         background-image: url('../img/training.svg');
+      }
+
+      &--growth {
+         background-image: url('../img/growth.svg');
+      }
+
+      &--salary {
+         background-image: url('../img/salary.svg');
+      }
+   }
+
+   &__subtitle {
+      margin: 0 0 9px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+   }
+
+   &__descr {
+      margin: 0;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-storm);
+   }
+}

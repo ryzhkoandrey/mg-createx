@@ -1,0 +1,44 @@
+.facts {
+   position: relative;
+   overflow: hidden;
+   padding: 180px 0 100px;
+   background: url('../img/facts-bg.png') no-repeat left top;
+
+   @include mobile {
+      padding: 40px 0;
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: -195px;
+      left: -9px;
+      width: 570px;
+      height: 1065px;
+      background: url("../img/facts-bg.png") no-repeat center / cover;
+   }
+
+   &__title {
+      margin: 0 0 60px;
+
+      @include mobile {
+         margin: 0 0 25px;
+      }
+   }
+
+   &__list {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px;
+      max-width: 736px;
+      
+      @include minitablet {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include mobile {
+         grid-template-columns: 1fr;
+      }
+   }
+}

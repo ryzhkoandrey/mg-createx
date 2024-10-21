@@ -1,0 +1,58 @@
+.positions-item {
+   padding: 32px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   border: 1px solid #E5E8ED;
+   border-radius: 4px;
+
+   @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+   }
+
+   &__meta {
+      margin: 0 0 7px;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--color-storm);
+   }
+
+   &__city {
+      position: relative;
+      margin: 0 21px 0 0;
+      padding: 0 0 0 23px;
+      background: url('../img/city.svg') no-repeat center left;
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         right: -10px;
+         transform: translateY(-50%);
+         width: 1px;
+         height: 12px;
+         background: currentColor;
+      }
+   }
+
+   &__time {
+      padding: 0 0 0 23px;
+      background: url('../img/time.svg') no-repeat center left;
+   }
+
+   &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-ebony);
+   }
+
+   &__link {
+      flex-shrink: 0;
+      width: 151px;
+   }
+}

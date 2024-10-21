@@ -1,0 +1,8 @@
+.categories-list {
+   margin: 0 0 62px;
+   gap: calc(var(--grid-gap) * 2) var(--grid-gap);
+
+   &__item {
+      grid-column: span 6;
+   }
+}

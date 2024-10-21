@@ -1,0 +1,19 @@
+.positions-content {
+   padding: 121px 0 181px;
+
+   &__left {
+      grid-column: span 7;
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+
+   &__right {
+      grid-column: 9 / span 4;
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+}

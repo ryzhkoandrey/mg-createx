@@ -1,0 +1,139 @@
+.hero {
+
+   &__prev,
+   &__next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background: rgba(#fff, .5);
+
+      &:hover {
+         background: #fff;
+
+         path {
+            fill: var(--color-gray);
+         }
+      }
+
+      @include middledesk {
+         display: none;
+      }
+   }
+
+   &__prev {
+      left: 24px;
+   }
+
+   &__next {
+      right: 24px;
+   }
+
+   &__pag {
+      counter-reset: pag;
+      display: flex;
+      gap: 4px;
+      left: calc( (100% - 1230px) / 2 ) !important;
+      bottom: 120px !important;
+
+      @include middledesk {
+         left: 3% !important;
+      }
+
+      @include minidesk {
+         left: 15px !important;
+      }
+
+      @include minitablet {
+         bottom: 50px !important;
+         width: calc(100% - 30px) !important;
+      }
+
+      @include mobile {
+         display: none;
+      }
+
+      // swiper
+
+      .swiper-pagination-bullet {
+         margin: 0 !important;
+         width: 178px;
+         height: auto;
+         text-align: left;
+         background: transparent;
+         border-radius: 0;
+         opacity: 1;
+
+         @include minitablet {
+            width: 25%;
+         }
+
+         &::before {
+            counter-increment: pag;
+            content: '0' counter(pag);
+            display: block;
+            margin: 0 0 10px;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 150%;
+            text-transform: uppercase;
+            color: rgba(#fff, .3);
+            transition: .3s;
+         }
+      }
+
+      .swiper-pagination-bullet-active {
+         
+         &::before {
+            color: #fff;
+         }
+
+         .hero__bar {
+
+
+            &::after {
+               transform: scaleX(1);
+               transition: var(--hero-slider-speed);
+            }
+         }
+      }
+   }
+
+   &__bar {
+      position: relative;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: rgba(#fff, .3);
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 2px;
+         background: #fff;
+         transform-origin: left;
+         transform: scaleX(0);
+      }
+   }
+
+   &__content {
+      padding: 0 15px 0;
+      max-width: 595px;
+   }
+
+   &__btns {
+      transform: translateX(-2px);
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      @include mobile {
+         flex-direction: column;
+         gap: 20px 0;
+      }
+   }
+}

@@ -1,0 +1,15 @@
+.portfolio-tabs {
+
+   &__item {
+      display: none;
+      grid-column: span 4;
+
+      &--visible {
+         display: block;
+      }
+
+      &--visible-more {
+         display: block !important;
+      }
+   }
+}

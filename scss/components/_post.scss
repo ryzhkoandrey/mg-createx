@@ -1,0 +1,119 @@
+.post {
+
+   &__cover {
+      margin: -79px 0 0;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+   }
+
+   &__wrapper {
+      margin: 0 auto;
+      padding: 0 15px;
+      max-width: 840px;
+   }
+   
+   &__content {
+      padding: 78px 0 61px;
+
+      * {
+         margin: 0 0 28px;
+         font-size: 16px;
+         line-height: 160%;
+         color: var(--color-gray);
+
+         &:last-child {
+            margin: 0;
+         }
+      }
+
+      h2 {
+         margin: 0 0 24px;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 150%;
+         color: var(--color-ebony);
+      }
+
+      h3 {
+         margin: 0 0 24px;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 150%;
+         color: var(--color-ebony);
+      }
+
+      p {
+         margin: 0 0 28px;
+         font-size: 16px;
+         line-height: 160%;
+         color: var(--color-gray);
+      }
+
+      blockquote {
+         position: relative;
+         margin: 48px 0;
+         padding: 0 0 0 58px;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 150%;
+         color: var(--color-ebony);
+
+         @include mobile {
+            padding: 50px 0 0;
+         }
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 28px;
+            height: 20px;
+            background: url('../img/braces.svg') no-repeat center / cover;
+         }
+      }
+
+      ul {
+         margin: 0 0 24px;
+         padding: 0;
+         list-style: none;
+      }
+
+      li {
+         position: relative;
+         padding: 0 0 0 32px;
+         font-size: 16px;
+         line-height: 160%;
+         color: var(--color-gray);
+
+         &:not(:last-child) {
+            margin: 0 0 4px;
+         }
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background: url('../img/decisions-check.svg') no-repeat center / cover;
+         }
+      }
+   }
+
+   &__share {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-ebony);
+   }
+
+   &__social {
+      gap: 13px;
+   }
+}

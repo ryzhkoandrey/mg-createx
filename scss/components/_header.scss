@@ -1,0 +1,52 @@
+.header {
+   padding: 23px 0 21px;
+
+   &--main {
+      background: #fff;
+   }
+
+   &--secondary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+   }
+
+   &__container {
+      @include flex-all-sb;
+   }
+
+   &__nav {
+      margin: 0 0 0 -114px;
+
+      @include minidesk {
+         margin-left: 0;
+      }
+
+      @include tablet {
+         position: fixed;
+         top: 0;
+         left: 0;
+         transform: translateX(-150%);
+         overflow-y: auto;
+         z-index: 1000;
+         padding: 50px;
+         width: 80%;
+         height: 100vh;
+         display: block;
+         background: #fff;
+         transition: transform .3s;
+      }
+
+      @include mobile {
+         padding: 20px;
+      }
+
+      &--active {
+
+         @include tablet {
+            transform: translateX(0);
+         }
+      }
+   }
+}

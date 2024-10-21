@@ -1,0 +1,36 @@
+.project-info {
+   padding: 40px 60px;
+   background: #FFF;
+   box-shadow: var(--main-shadow);
+   border-radius: 4px;
+
+   @include mobile {
+      padding: 30px 0;
+   }
+
+   &__item {
+      display: flex;
+      gap: 32px;
+      
+      &:not(:last-child) {
+         margin: 0 0 16px;
+      }
+   }
+
+   &__category {
+      flex: 0 0 98px;
+      flex-shrink: 0;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      text-transform: uppercase;
+      color: var(--coloe-ebony);
+      
+   }
+
+   &__value {
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-storm);
+   }
+}

@@ -1,0 +1,54 @@
+.footer-nav {
+   padding: 7px 0 0 54px;
+   display: flex;
+
+   @include minitablet {
+      padding: 7px 0 0 24px;
+   }
+
+   @include mobile {
+      padding: 7px 0 0;
+   }
+
+   &__col {
+
+      &:not(:last-child) {
+         margin: 0 125px 0 0;
+
+         @include minitablet {
+            margin: 0 65px 0 0;
+         }
+
+         @include mobile {
+            margin: 0 35px 0 0;
+         }
+      }
+   }
+
+   &__item {
+
+      &:not(:last-child) {
+         margin: 0 0 4px;
+      }
+   }
+
+   &__link {
+      font-size: 16px;
+      line-height: 160%;
+      color: inherit;
+      transition: color .3s;
+
+      &:focus {
+         outline: 1px solid var(--color-primary);
+         outline-offset: 2px;
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+
+      &:active {
+         color: var(--color-active);
+      }
+   }
+}

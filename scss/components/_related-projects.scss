@@ -1,0 +1,40 @@
+.related-projects {
+   padding: 180px 0 100px;
+
+   &__top {
+      margin: 0 0 47px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      @include mobile {
+         display: block;
+         margin: 0 0 25px;
+      }
+   }
+
+   &__title {
+      margin: 0;
+      padding: 0 0 12px;
+      max-width: 710px;
+   }
+
+   &__slider-nav {
+      transform: translateX(12px);
+
+      @include mobile {
+         transform: translateX(0);
+      }
+   }
+
+   // to avoid shadow clipping effect
+
+   &__items {
+      margin: 0 -30px -100px;
+      padding: 0 30px 100px;
+   }
+
+   &__learn {
+      margin: 80px 0 0;
+   }
+}

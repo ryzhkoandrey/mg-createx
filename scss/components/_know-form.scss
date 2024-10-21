@@ -1,0 +1,55 @@
+.know-form {
+   transform: translateY(120px);
+   padding: 48px 60px;
+   background: #FFF;
+   border-radius: 4px;
+   box-shadow: var(--main-shadow);
+
+   @include mobile {
+      transform: translateY(0);
+      padding: 30px 0 0;
+   }
+
+   &__title {
+      margin: 0 0 33px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 150%;
+      text-align: center;
+      color: var(--color-ebony);
+   }
+
+   &__content {
+      display: flex;
+      align-items: flex-end;
+
+      @include tablet {
+         justify-content: space-between;
+         flex-wrap: wrap;
+
+         & > * {
+            margin: 0 0 20px !important;
+            flex-grow: initial;
+            width: 49%;
+
+            // form-field
+
+            .form-field__input {
+               width: 100%;
+            }
+         }
+      }
+
+      @include mobile {
+         display: block;
+
+         & > * {
+            width: 100%;
+         }
+      }
+   }
+
+   &__field {
+      margin: 0 24px 0 0;
+   }
+}

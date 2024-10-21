@@ -1,0 +1,16 @@
+.logo {
+   transition: color .3s;
+
+   &:focus {
+      outline: 1px solid var(--color-primary);
+      outline-offset: 2px;
+   }
+
+   @include minidesk {
+      max-width: 100px;
+   }
+
+   @include tablet {
+      max-width: none;
+   }
+}

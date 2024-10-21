@@ -1,0 +1,100 @@
+.footer {
+   position: relative;
+   padding: 80px 0;
+   color: rgba(#fff, .6);
+   background: var(--color-ebony);
+
+   &__left {
+      grid-column: span 7;
+
+      @include minitablet {
+         grid-column: span 12;
+      }
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+
+   &__top {
+      margin: 0 0 22px;
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+         display: block;
+      }
+   }
+
+   &__logo {
+      margin: 0 60px 0 0;
+
+      @include mobile {
+         margin: 0 0 30px;
+         display: inline-block;
+      }
+   }
+
+   &__descr {
+      margin: 0;
+      max-width: 493px;
+      font-size: 14px;
+      line-height: 150%;
+      color: rgba(#fff, .6);
+   }
+
+   &__form {
+      grid-column: span 5;
+
+      @include minitablet {
+         grid-column: span 12;
+      }
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+
+   &__address {
+      grid-column: span 4;
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+
+   &__title {
+      margin: 0 0 14px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #FFF;
+   }
+
+   &__nav {
+      grid-column: span 8;
+
+      @include mobile {
+         grid-column: span 4;
+      }
+   }
+
+   &__copyright {
+      padding: 30px 0 0;
+      grid-column: span 10;
+      font-size: 12px;
+      line-height: 150%;
+      color: #FFF;
+
+      @include mobile {
+         grid-column: span 4;
+      }
+
+      span {
+         padding: 0 0 0 23px;
+         background: url('../img/heart.svg') no-repeat 3px center;
+      }
+   }
+}

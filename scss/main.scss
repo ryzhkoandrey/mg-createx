@@ -1,0 +1,115 @@
+// GLOBAL
+
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "libs";
+@import "settings";
+
+// COMMON
+
+@import 'components/header';
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/header-contacts';
+@import 'components/social';
+@import 'components/page-hero';
+@import 'components/breadcrumbs';
+@import 'components/mission';
+@import 'components/form-field';
+@import 'components/learn-more';
+@import 'components/slider-nav';
+@import 'components/portfolio-item';
+@import 'components/partners';
+@import 'components/testimonials';
+@import 'components/testimonials-item';
+@import 'components/news-article';
+@import 'components/article-meta';
+@import 'components/related-projects';
+@import 'components/table';
+@import 'components/contacts-section';
+@import 'components/contacts-form';
+@import 'components/footer';
+@import 'components/footer-form';
+@import 'components/footer-address';
+@import 'components/footer-nav';
+
+// INDEX
+
+@import 'components/hero';
+@import 'components/hero-slider';
+@import 'components/hero-slide';
+@import 'components/about-section';
+@import 'components/video-block';
+@import 'components/know-form';
+@import 'components/services-section';
+@import 'components/services-list';
+@import 'components/services-item';
+@import 'components/portfolio-section';
+@import 'components/facts';
+@import 'components/facts-element';
+@import 'components/recent-news';
+
+// SERVICES
+
+@import 'components/services';
+
+// SERVICES-1
+
+@import 'components/we-offer';
+@import 'components/how-we-do';
+@import 'components/services-benefits';
+@import 'components/pricing';
+
+// WORK
+
+@import 'components/portfolio';
+@import 'components/portfolio-tabs-nav';
+@import 'components/portfolio-tabs';
+@import 'components/portfolio-more';
+
+// WORK-1
+
+@import 'components/work-images';
+@import 'components/work-images-slider';
+@import 'components/work-images-nav';
+@import 'components/project-goal';
+@import 'components/project-info';
+@import 'components/decisions';
+
+// ABOUT
+
+@import 'components/achieve';
+@import 'components/quote';
+@import 'components/history';
+@import 'components/history-nav';
+@import 'components/history-slider';
+@import 'components/team';
+@import 'components/worldwide';
+
+// POSITIONS
+
+@import 'components/positions-content';
+@import 'components/positions-list';
+@import 'components/positions-item';
+@import 'components/positions-looking';
+
+// NEWS
+
+@import 'components/categories';
+@import 'components/categories-nav';
+@import 'components/categories-list';
+@import 'components/categories-pag';
+
+// POST
+
+@import 'components/post';
+@import 'components/comments';
+@import 'components/comment';
+@import 'components/post-form';
+
+// CONTACTS
+
+@import 'components/contacts';
+@import 'components/form-contacts';
+@import 'components/contacts-info';

@@ -1,0 +1,27 @@
+.work-images-nav {
+   overflow: hidden;
+
+   // swiper
+
+   .swiper-slide {
+      border: 1px solid transparent;
+      border-radius: 4px;
+      opacity: 0.6;
+      cursor: pointer;
+      transition: .3s;
+
+      img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         border-radius: 4px;
+         object-fit: cover;
+      }
+   }
+
+   .swiper-slide-thumb-active {
+      border-color: var(--color-primary);
+      cursor: default;
+      opacity: 1;
+   }
+}

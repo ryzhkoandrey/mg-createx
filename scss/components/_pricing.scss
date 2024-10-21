@@ -1,0 +1,11 @@
+.pricing {
+   padding: 82px 0 40px;
+   background: #F4F5F7 url('../img/pricing-bg.png') no-repeat top left -8px;
+
+   &__table {
+
+      @include minitablet {
+         width: 1200px;
+      }
+   }
+}

@@ -1,0 +1,9 @@
+.positions-list {
+
+   &__item {
+
+      &:not(:last-child) {
+         margin: 0 0 24px;
+      }
+   }
+}

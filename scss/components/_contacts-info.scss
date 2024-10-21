@@ -1,0 +1,147 @@
+.contacts-info {
+   padding: 80px 0 119px;
+   background: #F4F5F6;
+
+   &__list {
+      --contacts-gap: 120px;
+
+      margin: 0 0 117px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: calc(var(--contacts-gap) * 2);
+
+      @include minidesk {
+         --contacts-gap: 40px;
+      }
+
+      @include minitablet {
+         display: block;
+      }
+   }
+
+   &__item {
+      position: relative;
+
+      &:not(:last-child) {
+
+         @include minitablet {
+            margin: 0 0 30px;
+         }
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: calc(-1 * var(--contacts-gap));
+            transform: translateX(2px);
+            width: 1px;
+            height: 100%;
+            background: url('../img/divider.svg') center / cover no-repeat;
+         }
+      }
+   }
+
+   &__subtitle {
+      margin: 0 0 24px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 150%;
+      color: var(--color-ebony);
+   }
+
+   &__address {
+      margin: 0 0 9px;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-ebony);
+   }
+
+   &__link {
+      margin: 0 0 24px;
+      display: inline-block;
+      font-size: 16px;
+      color: var(--color-primary);
+      border-bottom: 1px solid currentColor;
+      transition: color .3s;
+
+         &:focus {
+            outline: 1px solid var(--color-primary);
+            outline-offset: 2px;
+         }
+
+         &:hover {
+            color: var(--color-active);
+            border-color: transparent;
+         }
+
+         &:active {
+            color: var(--color-active);
+            border-color: transparent;
+         }
+   }
+
+   &__element {
+      margin: 0 0 4px;
+      font-size: 16px;
+      line-height: 160%;
+      color: var(--color-storm);
+   }
+
+   &__value {
+      color: var(--color-ebony);
+   }
+
+   a.contacts-info__value {
+      transition: color .3s;
+
+      &:focus {
+         outline: 1px solid var(--color-primary);
+         outline-offset: 2px;
+      }
+
+      &:hover {
+         color: var(--color-primary);
+      }
+
+      &:active {
+         color: var(--color-active);
+      }
+   }
+
+   &__soc {
+      margin: 0 0 40px;
+   }
+
+   &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      // social
+
+      .social__link {
+         width: 32px;
+         height: 32px;
+         color:var(--color-storm);
+
+         &:focus {
+            outline: 1px solid var(--color-primary);
+            outline-offset: 2px;
+         }
+   
+         &:hover {
+            color: var(--color-primary);
+         }
+         
+         &:active {
+            color: var(--color-active);
+         }
+
+         svg {
+            fill: currentColor;
+         }
+      }
+   }
+}
