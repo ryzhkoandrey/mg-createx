@@ -1,7 +1,7 @@
 // GET VAR (--grid-gap)
 
 const bodyStyles = window.getComputedStyle(document.body);
-const gap = parseInt( bodyStyles.getPropertyValue('--grid-gap') );
+const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
 
 // HERO
 
@@ -28,7 +28,7 @@ const heroSlider = new Swiper('.hero-slider', {
       type: 'bullets',
       clickable: true
    },
-   
+
    on: {
       init: function () {
          const paginationBullets = document.querySelectorAll('.hero__pag .swiper-pagination-bullet');
